@@ -9,7 +9,8 @@ Classic Snake on a 16×16 grid built with Vite, TypeScript, Tailwind, and Supaba
 - Random red food dots on empty cells, +1 score and +1 length per bite.
 - Wall and self-collision game over.
 - Glowing snake head with a rainbow body gradient that shifts as the snake grows.
-- Supabase magic-link auth and a per-user top-5 leaderboard backed by RLS.
+- Supabase email/password auth and a per-user top-5 leaderboard backed by RLS.
+- Protected app shell that shows login/sign-up first and hides the game UI until sign-in succeeds.
 
 ## Setup
 
