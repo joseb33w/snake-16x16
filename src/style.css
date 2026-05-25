@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap');
+@import 'tailwindcss';
+
+:root {
+  color: #e2e8f0;
+  background: #050816;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(16, 185, 129, 0.24), transparent 28rem),
+    radial-gradient(circle at 88% 4%, rgba(34, 211, 238, 0.24), transparent 26rem),
+    radial-gradient(circle at 50% 90%, rgba(168, 85, 247, 0.18), transparent 28rem),
+    #050816;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black, transparent 80%);
+}
+
+button,
+input,
+canvas {
+  font: inherit;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.game-canvas {
+  display: block;
+  width: min(100%, 480px);
+  height: auto;
+  touch-action: none;
+}
